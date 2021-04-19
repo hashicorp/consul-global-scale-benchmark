@@ -1,0 +1,19 @@
+#  Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# .tfvars files
+#*.tfvars
+
+# App specific
+server.pem
+
+# Terraform outputs
+.ssh/
+kubeconfig*
+
+# Environment variables
+env.sh
