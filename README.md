@@ -21,23 +21,25 @@ The benchmark uses Terraform to initialize infrastructure.
 
 ### Prerequisites
 
-* [Terraform Cloud](https://www.terraform.io/cloud) account. Follow [this](https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started) tutorial to sign up.
+* Terraform [remote state](https://www.terraform.io/docs/language/state/remote.html) backend.
 
-Edit `infrastructure/remote.tf` file and add Terraform Cloud organization name.
+_Note: Any of the Terraform [remote backends](https://www.terraform.io/docs/language/settings/backends/remote.html) can be used for this project._
 
-```hcl
-terraform {
-  backend "remote" {
-    organization = "YOUR_TERRAFORM_CLOUD_ORGANIZATION_NAME_HERE"
+Using [Terraform Cloud](https://www.terraform.io/cloud) backend. 
 
-    workspaces {
-      name = "consul-scalability-challenge-infrastructure"
+* Follow [this](https://learn.hashicorp.com/tutorials/terraform/cloud-sign-up?in=terraform/cloud-get-started) tutorial to sign up.
+* Edit `infrastructure/remote.tf` file and add Terraform Cloud organization name.
+  ```hcl
+  terraform {
+    backend "remote" {
+      organization = "YOUR_TERRAFORM_CLOUD_ORGANIZATION_NAME_HERE"
+
+      workspaces {
+        name = "consul-scalability-challenge-infrastructure"
+      }
     }
   }
-}
-```
-
-_Note: Any Terraform [remote backends](https://www.terraform.io/docs/language/settings/backends/remote.html) can be used for this project._
+  ```
 
 ### Create Infrastructure via HashiCorp Terraform
 
