@@ -59,3 +59,4 @@ Run Terraform apply
 terraform apply -var="key_name=consul-global-scale-challenge" -var="datadog_api_key=${DATADOG_API_KEY}" -parallelism="100"
 ```
 
+More documentation coming soon!
