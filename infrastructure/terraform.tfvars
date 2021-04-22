@@ -34,15 +34,15 @@ nomad_server_instance_type = "r5d.4xlarge"
 nomad_client_instance_type = "c5.xlarge"
 nomad_client_groups = [
   {
-    asg_min_size         = 1
-    asg_max_size         = 1
-    asg_desired_capacity = 1
+    asg_min_size         = 5000
+    asg_max_size         = 5000
+    asg_desired_capacity = 5000
   },
-  #{
-  #  asg_min_size         = 5000
-  #  asg_max_size         = 5000
-  #  asg_desired_capacity = 5000
-  #},
+  {
+    asg_min_size         = 5000
+    asg_max_size         = 5000
+    asg_desired_capacity = 5000
+  },
 ]
 nomad_enable_streaming_servers   = true
 nomad_enable_streaming_clients   = true
