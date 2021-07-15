@@ -303,4 +303,5 @@ module "consul-datadog-cluster-1" {
   consul_tls_ca_cert_pem            = var.consul_tls_ca_cert_pem
   consul_gossip_encryption_key      = var.consul_gossip_encryption_key
   consul_helm_chart_version         = var.consul_helm_chart_version
+  consul_version                    = var.consul_version
 }

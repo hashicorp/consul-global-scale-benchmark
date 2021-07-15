@@ -13,7 +13,7 @@ eks_loadgenerator_concurrency                      = 2
 tier_2_to_tier_3_intention_deny                    = false
 tier_1_tier_2_service_api_upstream                 = true
 tier_1_tier_2_tier_3_service_hey_cross_dc_upstream = true
-eks_loadgenerator_consul_download_url              = "https://consul-scalability-challenge.s3.amazonaws.com/consul-1.9.0-dev"
+eks_loadgenerator_consul_download_url              = "" #"https://consul-scalability-challenge.s3.amazonaws.com/consul-1.9.0-dev"
 
 # Nomad Cluster variables
 nomad_service_count                                = 1000
@@ -30,7 +30,7 @@ nomad_loadgenerator_concurrency                    = 2
 tier_1_to_tier_2_intention_deny                    = false
 tier_2_traffic_redirect                            = false # Redirects calls to tier 2 services on Nomad to tier 2 services in Kubernetes.
 tier_1_tier_2_tier_3_service_api_cross_dc_upstream = true
-nomad_loadgenerator_consul_download_url            = "https://consul-scalability-challenge.s3.amazonaws.com/consul-1.9.0-dev"
+nomad_loadgenerator_consul_download_url            = "" #"https://consul-scalability-challenge.s3.amazonaws.com/consul-1.9.0-dev"
 
 # General loadgenerator settings
 consul_http_max_conns_per_client = 15000

@@ -63,6 +63,7 @@ variable "eks_consul_envoy_global_image" {
 }
 
 variable "eks_consul_envoy_global_image_version" {
+  default = ""
 }
 
 variable "eks_consul_k8s_global_image" {
@@ -81,6 +82,7 @@ variable "eks_consul_enable_ui_elb" {
 }
 
 variable "eks_consul_download_url" {
+  default = ""
 }
 
 variable "eks_consul_envoy_log_level" {
@@ -164,10 +166,11 @@ variable "nomad_consul_enable_ui_elb" {
 }
 
 variable "nomad_version" {
-  default = "1.0.1"
+  default = "1.0.2"
 }
 
 variable "nomad_consul_download_url" {
+  default = ""
 }
 
 variable "nomad_envoy_log_level" {

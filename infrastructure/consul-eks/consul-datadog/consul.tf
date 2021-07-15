@@ -37,18 +37,13 @@ resource "helm_release" "consul" {
   # changes.
   set {
     name  = "global.image"
-    value = "${var.consul_global_image}:latest"
+    value = "${var.consul_global_image}:${var.consul_version}"
   }
 
   set {
     name  = "global.imageK8S"
     value = var.consul_k8s_global_image
   }
-
-  #set {
-  #  name  = "global.image"
-  #  value = "${consul_global_image}:${var.consul_version}"
-  #}
 
   ## Uncomment when using custom envoy image
   #set {

@@ -109,7 +109,7 @@ fi
 # Fetch Consul
 cd /tmp
 CONSUL_DOWNLOAD_URL="${consul_download_url}"
-if [ -z $${CONSUL_DOWNLOAD_URL+x} ];
+if [ -z $${CONSUL_DOWNLOAD_URL} ];
 then 
   echo "using releases.hashicorp.com to download consul"
   wget https://releases.hashicorp.com/consul/${consul_version}/consul_${consul_version}_linux_amd64.zip -O ./consul.zip

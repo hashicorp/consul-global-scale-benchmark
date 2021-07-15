@@ -50,3 +50,6 @@ variable "consul_gossip_encryption_key" {
 variable "consul_helm_chart_version" {
   default = "0.28.0"
 }
+
+variable "consul_version" {
+}

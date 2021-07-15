@@ -13,10 +13,9 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-# TODO: update the organization name of the remote state before GitHub.
 data "terraform_remote_state" "infrastructure" {
   backend = "remote"
-  
+
   config = {
     organization = "YOUR_TERRAFORM_CLOUD_ORGANIZATION_NAME_HERE"
     workspaces = {
