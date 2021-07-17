@@ -2,9 +2,7 @@ BUILD_ID := $(shell git rev-parse --short HEAD 2>/dev/null || echo no-commit-id)
 ENVOY_IMAGE_NAME := anubhavmishra/envoy
 ENVOY_VERSION := v1.16.0
 
-.DEFAULT_GOAL := help
-help: ## List targets & descriptions
-	@cat Makefile* | grep -E '^[a-zA-Z_-]+:.*?## .*$$' | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
+default: fmt
 
 clean: ## Clean the project
 	rm -rf ./build
