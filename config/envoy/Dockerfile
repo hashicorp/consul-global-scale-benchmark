@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 FROM envoyproxy/envoy:v1.16.0
 
 RUN apt-get update && \

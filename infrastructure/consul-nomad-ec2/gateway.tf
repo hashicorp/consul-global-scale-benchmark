@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 data "template_file" "consul_gateway" {
   count = var.consul_gateway_count
 
