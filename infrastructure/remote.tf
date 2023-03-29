@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 ## TODO: add note around using Terraform remote state
 terraform {
   backend "remote" {

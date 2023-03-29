@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "nomad_server_ips" {
   value = aws_instance.nomad_server.*.public_ip
 }

@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 # EKS Cluster variables
 eks_consul_server_count         = 3
 eks_consul_datacenter           = "dc1"

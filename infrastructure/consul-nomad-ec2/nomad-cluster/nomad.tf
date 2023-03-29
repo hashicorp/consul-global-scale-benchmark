@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 locals {
   client_group_count = length(var.client_groups)
   cloud_config_consul_kv_watch_file = <<-EOF

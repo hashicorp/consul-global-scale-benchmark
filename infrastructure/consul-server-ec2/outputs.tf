@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "consul_server_ips" {
   value = length(aws_instance.consul_server) > 0 ? aws_instance.consul_server.*.public_ip : null
 }

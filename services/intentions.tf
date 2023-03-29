@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 resource "random_integer" "service_number_tier_services_deny" {
   count = var.tier_2_to_tier_3_intention_deny ? var.eks_service_count : 0
 

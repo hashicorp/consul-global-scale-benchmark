@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 resource "kubernetes_secret" "consul_ca_cert" {
   metadata {
     name = "consul-ca-cert"

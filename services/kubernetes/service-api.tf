@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 resource "kubernetes_deployment" "service-api" {
   count            = var.cluster_name != "cluster-1" ? 0 : (var.tier_2_traffic_redirect ? 0 : 1)
   wait_for_rollout = false

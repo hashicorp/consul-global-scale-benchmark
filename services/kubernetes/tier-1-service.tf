@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 resource "kubernetes_deployment" "tier-1-service" {
   count            = var.service_count
   wait_for_rollout = false

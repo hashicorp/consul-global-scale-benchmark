@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 # EKS Cluster variables
 eks_service_count                                  = 0 #600 # 2x the node count
 eks_tier_1_service_instance_count                  = 2

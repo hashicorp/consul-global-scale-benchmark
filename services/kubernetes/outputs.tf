@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "tier_1_service_addr" {
   # Using the function "try" to work around the empty turple error when the variable
   # service count isn't set. https://github.com/terraform-providers/terraform-provider-aws/issues/9733

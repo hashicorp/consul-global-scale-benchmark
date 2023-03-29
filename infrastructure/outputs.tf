@@ -1,3 +1,6 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
 output "consul_eks_server_elb_dns" {
   value = module.consul-eks.consul_elb
 }
