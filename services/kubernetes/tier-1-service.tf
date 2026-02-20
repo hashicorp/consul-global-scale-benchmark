@@ -1,4 +1,4 @@
-# Copyright (c) HashiCorp, Inc.
+# Copyright IBM Corp. 2021, 2023
 # SPDX-License-Identifier: MPL-2.0
 
 resource "kubernetes_deployment" "tier-1-service" {
